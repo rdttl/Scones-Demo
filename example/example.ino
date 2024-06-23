@@ -1,5 +1,5 @@
-int ledPins[] = {2, 3, 4, 5, 6, 7, 8};
-int slowDelayLED = 450;
+int ledPins[] = {2, 3, 4, 5, 6, 7, 8};  // Don't change these (or do, I'm not your Mum)
+int slowDelayLED = 450;                 // You can change delay times tho :)
 int delayLED = 150;
 int fastDelayLED = 70;
 
@@ -13,13 +13,18 @@ void setup() {
 
 // This is called directly after setup().
 void loop() {
-  fadeInOut();
+  printChar('a');
+  // fadeInOut();
+  // blankLEDs();
+  // allLEDs();
 }
 
 // Helper functions //////////////////////////////////////////////////////////
 // Given a char, it flashes the ascii representation on the LEDs
-void blinkLEDsOnPattern(char entry) {
-  for (int i = 0; i < 8; i++) {
+// You can reverse the order if you want ;)
+// To reverse, change to "for (int i = 6; i >= 0; i--) {...}"
+void printChar(char entry) {
+  for (int i = 0; i < 7; i++) {
     if (entry & 1) {
       digitalWrite(ledPins[i], HIGH);
     } else {
@@ -42,7 +47,7 @@ void allLEDs() {
 }
 
 // Fades the LEDs out in an infinite loop. Just flashes the LEDs really quickly
-// to create an optical illusion 
+// to create an optical illusion of dimming
 void fadeInOut() {
   while (1) {
     blankLEDs();
