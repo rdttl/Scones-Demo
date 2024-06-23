@@ -20,7 +20,7 @@ It is possible to modify your own avrdude configuration here too, but I won't co
 3. Add board support for our one-series chips.
 	* Goto File->Preferences. Walled garden enthusiasts might have this under Arduino->Preferences.
 	* Navigate to "Additional boards manager URLs", and paste the entire following link:
-	* https://raw.githubusercontent.com/rdttl/SconesDemo/main/pkgrdttl.json
+	* https://raw.githubusercontent.com/rdttl/Scones-Demo/main/pkgrdttl.json
 	* Then, goto Tools->Board->Boards manager. Search for 'megaTinyCore', and install it
 	* Restart the IDE
 
