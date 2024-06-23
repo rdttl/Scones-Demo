@@ -13,7 +13,7 @@ void setup() {
 
 // This is called directly after setup().
 void loop() {
-  printChar('a');
+  // printChar('a');
   // fadeInOut();
   // blankLEDs();
   // allLEDs();
